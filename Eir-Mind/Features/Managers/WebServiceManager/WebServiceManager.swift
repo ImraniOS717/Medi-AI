@@ -21,7 +21,12 @@ final class WebServiceManager {
     func performRequest<T: Decodable>(endPoint: String,
                                       method: HTTPMethod = .get,
                                       body: Data? = nil,
-                                      completion: @escaping (Result<T, Error>) -> Void) {
+                                      token: String? = nil,
+                                      completion: @escaping (Result<T, Error>) -> Void,
+                                      statusCode: ((Int) -> Void)? = nil) {
+        
+        
+        guard InternetManager.shared.isConnected else { return }
         
         guard let url = URL(string: NetworkConstants.baseUrl + endPoint) else {
             completion(.failure(NSError(domain: "InvalidURL", code: 0, userInfo: [NSLocalizedDescriptionKey: "Invalid URL string."])))
@@ -31,6 +36,10 @@ final class WebServiceManager {
         var request = URLRequest(url: url)
         request.httpMethod = method.rawValue
         
+        if let token = token {
+            request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
+        }
+
         /// If there's a body, add it and set headers
         if let body = body {
             request.httpBody = body
@@ -42,6 +51,12 @@ final class WebServiceManager {
                 completion(.failure(error))
                 return
             }
+            
+            if let response = response as? HTTPURLResponse {
+                print(response.statusCode)
+                statusCode?(response.statusCode)
+            }
+            
             
             guard let data = data else {
                 completion(.failure(NSError(domain: "NoData", code: 0, userInfo: [NSLocalizedDescriptionKey: "No data received."])))

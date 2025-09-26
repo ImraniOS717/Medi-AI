@@ -11,4 +11,7 @@ struct ApiEndPoints {
     static let loginEndPoint = "login"
     static let resetEndPoint = "reset-password"
     static let forgotPasswordEndPoint = "forgot-password"
+    static let diagnosisAgentEndPoint = "diagnosis/agents"
+    static let transcriptionSettingsEndPoint = "reset_transcription_settings"
+    static let signUpEndPoint = "signup"
 }

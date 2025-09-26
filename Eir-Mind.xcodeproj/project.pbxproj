@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		454CCED12E86D60700D97FE2 /* NotificationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454CCED02E86D60700D97FE2 /* NotificationExtension.swift */; };
 		45812E222E8536890078C7AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45812E1F2E8536890078C7AD /* Assets.xcassets */; };
 		45812E232E8536890078C7AD /* Eir_MindApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45812E202E8536890078C7AD /* Eir_MindApp.swift */; };
 		45812ECD2E853E6D0078C7AD /* WebServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45812ECC2E853E6D0078C7AD /* WebServiceManager.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		454CCED02E86D60700D97FE2 /* NotificationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationExtension.swift; sourceTree = "<group>"; };
 		45812E062E8535960078C7AD /* Eir-Mind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eir-Mind.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45812E1F2E8536890078C7AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45812E202E8536890078C7AD /* Eir_MindApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eir_MindApp.swift; sourceTree = "<group>"; };
@@ -50,6 +52,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		454CCECE2E86D5D400D97FE2 /* InternetManager */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = InternetManager;
+			sourceTree = "<group>";
+		};
 		45812E292E8537580078C7AD /* SplashScreen */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = SplashScreen;
@@ -125,7 +132,6 @@
 				45812EBF2E8539540078C7AD /* Info.plist */,
 				84209BA72E85B0DC00C09683 /* AppFonts */,
 				84209BB52E85B0E800C09683 /* Helpers */,
-				84209BB62E85B0E800C09683 /* Extensions */,
 				45812E242E8536A10078C7AD /* Assets */,
 				45812E1D2E8536890078C7AD /* Resources */,
 				45812E1E2E8536890078C7AD /* Features */,
@@ -144,6 +150,7 @@
 		45812EC42E853E270078C7AD /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				454CCECE2E86D5D400D97FE2 /* InternetManager */,
 				458130142E85678B0078C7AD /* SocketManager */,
 				458130102E8567690078C7AD /* DataManager */,
 				458130132E85677D0078C7AD /* WebServiceManager */,
@@ -198,15 +205,9 @@
 				84209BB22E85B0E800C09683 /* Colors.swift */,
 				84209BB32E85B0E800C09683 /* AppFonts.swift */,
 				84209BB42E85B0E800C09683 /* Constants.swift */,
+				454CCED02E86D60700D97FE2 /* NotificationExtension.swift */,
 			);
 			path = Helpers;
-			sourceTree = "<group>";
-		};
-		84209BB62E85B0E800C09683 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +226,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				454CCECE2E86D5D400D97FE2 /* InternetManager */,
 				45812E292E8537580078C7AD /* SplashScreen */,
 				45812EC52E853E450078C7AD /* Screens */,
 				458130092E8560EC0078C7AD /* Constants */,
@@ -303,6 +305,7 @@
 				84209BB72E85B0E800C09683 /* AppImages.swift in Sources */,
 				84209BB82E85B0E800C09683 /* Colors.swift in Sources */,
 				84209BB92E85B0E800C09683 /* AppFonts.swift in Sources */,
+				454CCED12E86D60700D97FE2 /* NotificationExtension.swift in Sources */,
 				84209BBA2E85B0E800C09683 /* Constants.swift in Sources */,
 				458130122E8567770078C7AD /* DataManager.swift in Sources */,
 				45812ECD2E853E6D0078C7AD /* WebServiceManager.swift in Sources */,

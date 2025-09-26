@@ -15,13 +15,20 @@ final class SocketManagerService {
     private var manager: SocketManager
     private var socket: SocketIOClient
     
-    private let socketURL = URL(string: "http://medai-django.fly.dev/api/docs/ws/diagnose/")!
+    private let socketURL = URL(string: "http://medai-django.fly.dev")!
     
     var socketConnected: (() -> Void)?
+    private let token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODgwZTVmODc3OTUxYmQ5ZTc3ODdkOTMiLCJyb2xlIjoidXNlciIsImVtYWlsIjoiZWlybWluZC50ZXN0QGdtYWlsLmNvbSIsImlzX2FjdGl2ZSI6dHJ1ZSwiZXhwIjoxNzU4OTU1OTQ0fQ.-vGZ8Pny053m08Xzx_cRR-kI8E5hKPs1yJr2RB3Zly0"
+
     
     private init() {
-        manager = SocketManager(socketURL: socketURL, config: [.log(true), .compress])
+        manager = SocketManager(socketURL: socketURL,
+                                config: [.log(true),
+                                .compress,
+                                .extraHeaders(["Authorization": "Bearer \(token)"])
+])
         socket = manager.defaultSocket
+        socket = manager.socket(forNamespace: "/diagnose")
     }
     
     // MARK: - Connection

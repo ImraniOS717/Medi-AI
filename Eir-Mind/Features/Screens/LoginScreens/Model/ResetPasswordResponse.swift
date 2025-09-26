@@ -8,7 +8,7 @@
 import Foundation
 
 struct ResetPasswordResponse: Codable {
-    let token: Int
+    let token: String
     let msg: String
 }
 /// send to server
