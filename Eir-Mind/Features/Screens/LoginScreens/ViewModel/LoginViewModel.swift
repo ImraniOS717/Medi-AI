@@ -9,6 +9,11 @@ import SwiftUI
 
 let MAIN_THREAD = DispatchQueue.main
 
+enum SignupStates {
+    case apple,google,none
+}
+
+
 final class LoginViewModel: ObservableObject {
     
     @Published var email: String = "eirmind.test@gmail.com"
@@ -16,55 +21,64 @@ final class LoginViewModel: ObservableObject {
     @Published var token: String = ""
     @Published var agentName: String = ""
     @Published var statusCode: Int = 0
-    let userDefaultKey = "userDefaultKey"
-    let userDefault = UserDefaults.standard
+    let signupState: SignupStates = .none
+    private var socialLoginAdapter: SocialAuthenticationProvider?
     
     
-    init() {
-        login { [weak self] isLoginSuccessfully in
-            guard let self else { return }
-            if isLoginSuccessfully {
-                
-                
-                getAgents {  isGetAgentSuccessfully  in
-                    
-                    
-                    if isGetAgentSuccessfully {
-                        self.resetPassword()
-                        
-                    }
-                    
-                }
-                
-            }
-            
-            transcriptionSettings()
-            signUpApi()
-            
-        }
-        
-        
-//        SocketManagerService.shared.connect()
-//        
-//        SocketManagerService.shared.on(event: "diagnose") { data, ack in
-//            print("Received data: \(data)")
-//            if let jsonData = try? JSONSerialization.data(withJSONObject: data[0], options: []),
-//               let response = try? JSONDecoder().decode(SocketResponse.self, from: jsonData) {
-//                print("Decoded response: \(response)")
-//            }
-//        }
-//        
-//        // Emit event
-//        SocketManagerService.shared.emit(event: "diagnose", data: ["key": "value"])
-        
-        // Disconnect when needed
-//        SocketManagerService.shared.disconnect()
-
-        
-        
-        
+    init() {}
+    
+    
+    final func onPressGoogleButton() {
+        signupState = .google
+        performLogin()
     }
     
+    final func onPressAppleButton() {
+        signupState = .apple
+        performLogin()
+    }
+    
+    private func performLogin() {
+        var url = "redirect/"
+        switch signupState {
+        case .apple:
+            self.socialLoginAdapter = AppleAuthenticationProvider()
+            url += "apple"
+        case .google:
+            self.socialLoginAdapter = GoogleAuthenticationProvider()
+            url += "google"
+        default:
+            return
+        }
+        
+        let viewController = getRootViewController()
+        Task {
+            do {
+                let user = try await socialLoginAdapter?.login(viewController: viewController)
+                printer.print("Fetch user successful: \(String(describing: user))")
+                guard let user else { return }
+                var params = ["id_token": user.id, "deviceType": "iOS", "reCaptchaToken": "123"]
+                if signupState == .apple {
+                    params["name"] = user.name
+                }
+
+            } catch {
+                print("Error on Perform Login: \(error)")
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { ///
+                    self.messageToShow = .failure("We couldn’t complete your login. Please try again or use a different method.".localize)
+                }
+            }
+        }
+    }
+    
+    private func getRootViewController() -> UIViewController { /// Return the root view controller, which is the top-level view controller of the app
+        return UIApplication.shared.connectedScenes
+            .map({$0 as? UIWindowScene})
+            .compactMap({$0})
+            .first?.windows.first?.rootViewController ?? UIViewController()
+    }
+    
+
     
     func getAgents(completion: @escaping ((Bool) -> Void)) {
 //        let token = retrieveToken()
