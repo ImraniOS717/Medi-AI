@@ -26,6 +26,33 @@
 		84209BB82E85B0E800C09683 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84209BB22E85B0E800C09683 /* Colors.swift */; };
 		84209BB92E85B0E800C09683 /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84209BB32E85B0E800C09683 /* AppFonts.swift */; };
 		84209BBA2E85B0E800C09683 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84209BB42E85B0E800C09683 /* Constants.swift */; };
+		846FD55B2E87E7BA00CA68D6 /* KeychainItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846FD5592E87E7BA00CA68D6 /* KeychainItem.swift */; };
+		846FD55C2E87E7BA00CA68D6 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846FD5582E87E7BA00CA68D6 /* KeychainWrapper.swift */; };
+		846FD55D2E87E7BA00CA68D6 /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846FD5572E87E7BA00CA68D6 /* KeychainItemAccessibility.swift */; };
+		846FD55F2E87E8AA00CA68D6 /* StoreAppleCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846FD55E2E87E8AA00CA68D6 /* StoreAppleCredential.swift */; };
+		846FD5622E87EB6900CA68D6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 846FD5612E87EB6900CA68D6 /* Alamofire */; };
+		846FD5642E87EB6900CA68D6 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 846FD5632E87EB6900CA68D6 /* AlamofireDynamic */; };
+		8482EBE02E87B9C400391A82 /* SCLogModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482EBDF2E87B9C400391A82 /* SCLogModule.swift */; };
+		8482EC2A2E87D38100391A82 /* ApiEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482EC272E87D38100391A82 /* ApiEndPoints.swift */; };
+		8482EC2B2E87D38100391A82 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482EC282E87D38100391A82 /* NetworkConstants.swift */; };
+		8482EC422E87D39300391A82 /* DiagnosisAgentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482EC2C2E87D39300391A82 /* DiagnosisAgentResponse.swift */; };
+		8482EC432E87D39300391A82 /* GenericResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482EC2D2E87D39300391A82 /* GenericResponse.swift */; };
+		8482EC442E87D39300391A82 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482EC2E2E87D39300391A82 /* LoginModel.swift */; };
+		8482EC452E87D39300391A82 /* ResetPasswordResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482EC2F2E87D39300391A82 /* ResetPasswordResponse.swift */; };
+		8482EC462E87D39300391A82 /* SignupPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482EC302E87D39300391A82 /* SignupPreferences.swift */; };
+		8482EC472E87D39300391A82 /* SignupResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482EC312E87D39300391A82 /* SignupResponse.swift */; };
+		8482EC482E87D39300391A82 /* SocketResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482EC322E87D39300391A82 /* SocketResponse.swift */; };
+		8482EC492E87D39300391A82 /* CustomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482EC342E87D39300391A82 /* CustomButtonView.swift */; };
+		8482EC4A2E87D39300391A82 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482EC362E87D39300391A82 /* LoginView.swift */; };
+		8482EC4B2E87D39300391A82 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482EC382E87D39300391A82 /* LoginViewModel.swift */; };
+		8482EC4C2E87D39300391A82 /* AppleAuthenticationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482EC3B2E87D39300391A82 /* AppleAuthenticationProvider.swift */; };
+		8482EC4D2E87D39300391A82 /* GoogleAuthenticationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482EC3C2E87D39300391A82 /* GoogleAuthenticationProvider.swift */; };
+		8482EC4E2E87D39300391A82 /* SocialAuthenticationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482EC3D2E87D39300391A82 /* SocialAuthenticationProvider.swift */; };
+		8482EC4F2E87D39300391A82 /* SocialLoginProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482EC3E2E87D39300391A82 /* SocialLoginProvider.swift */; };
+		8482EC502E87D39300391A82 /* SocialSignInUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482EC3F2E87D39300391A82 /* SocialSignInUser.swift */; };
+		8482EC532E87D3AB00391A82 /* SocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482EC512E87D3AB00391A82 /* SocketManager.swift */; };
+		8482EC562E87D3AB00391A82 /* InternetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482EC542E87D3AB00391A82 /* InternetManager.swift */; };
+		8482EC592E87D3B100391A82 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482EC572E87D3B100391A82 /* SplashView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,35 +76,32 @@
 		84209BB22E85B0E800C09683 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		84209BB32E85B0E800C09683 /* AppFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
 		84209BB42E85B0E800C09683 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		846FD5572E87E7BA00CA68D6 /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
+		846FD5582E87E7BA00CA68D6 /* KeychainWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
+		846FD5592E87E7BA00CA68D6 /* KeychainItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainItem.swift; sourceTree = "<group>"; };
+		846FD55E2E87E8AA00CA68D6 /* StoreAppleCredential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreAppleCredential.swift; sourceTree = "<group>"; };
+		8482EBDF2E87B9C400391A82 /* SCLogModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCLogModule.swift; sourceTree = "<group>"; };
+		8482EC272E87D38100391A82 /* ApiEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEndPoints.swift; sourceTree = "<group>"; };
+		8482EC282E87D38100391A82 /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		8482EC2C2E87D39300391A82 /* DiagnosisAgentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosisAgentResponse.swift; sourceTree = "<group>"; };
+		8482EC2D2E87D39300391A82 /* GenericResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericResponse.swift; sourceTree = "<group>"; };
+		8482EC2E2E87D39300391A82 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		8482EC2F2E87D39300391A82 /* ResetPasswordResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordResponse.swift; sourceTree = "<group>"; };
+		8482EC302E87D39300391A82 /* SignupPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPreferences.swift; sourceTree = "<group>"; };
+		8482EC312E87D39300391A82 /* SignupResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupResponse.swift; sourceTree = "<group>"; };
+		8482EC322E87D39300391A82 /* SocketResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketResponse.swift; sourceTree = "<group>"; };
+		8482EC342E87D39300391A82 /* CustomButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonView.swift; sourceTree = "<group>"; };
+		8482EC362E87D39300391A82 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		8482EC382E87D39300391A82 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		8482EC3B2E87D39300391A82 /* AppleAuthenticationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAuthenticationProvider.swift; sourceTree = "<group>"; };
+		8482EC3C2E87D39300391A82 /* GoogleAuthenticationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthenticationProvider.swift; sourceTree = "<group>"; };
+		8482EC3D2E87D39300391A82 /* SocialAuthenticationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialAuthenticationProvider.swift; sourceTree = "<group>"; };
+		8482EC3E2E87D39300391A82 /* SocialLoginProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginProvider.swift; sourceTree = "<group>"; };
+		8482EC3F2E87D39300391A82 /* SocialSignInUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialSignInUser.swift; sourceTree = "<group>"; };
+		8482EC512E87D3AB00391A82 /* SocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketManager.swift; sourceTree = "<group>"; };
+		8482EC542E87D3AB00391A82 /* InternetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetManager.swift; sourceTree = "<group>"; };
+		8482EC572E87D3B100391A82 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		454CCECE2E86D5D400D97FE2 /* InternetManager */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = InternetManager;
-			sourceTree = "<group>";
-		};
-		45812E292E8537580078C7AD /* SplashScreen */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SplashScreen;
-			sourceTree = "<group>";
-		};
-		45812EC52E853E450078C7AD /* Screens */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Screens;
-			sourceTree = "<group>";
-		};
-		458130092E8560EC0078C7AD /* Constants */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Constants;
-			sourceTree = "<group>";
-		};
-		458130142E85678B0078C7AD /* SocketManager */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SocketManager;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		45812E032E8535960078C7AD /* Frameworks */ = {
@@ -85,6 +109,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				45812EDD2E85486C0078C7AD /* SocketIO in Frameworks */,
+				846FD5642E87EB6900CA68D6 /* AlamofireDynamic in Frameworks */,
+				846FD5622E87EB6900CA68D6 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,9 +144,9 @@
 		45812E1E2E8536890078C7AD /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				458130092E8560EC0078C7AD /* Constants */,
-				45812E292E8537580078C7AD /* SplashScreen */,
-				45812EC52E853E450078C7AD /* Screens */,
+				8482EC292E87D38100391A82 /* Constants */,
+				8482EC582E87D3B100391A82 /* SplashScreen */,
+				8482EC412E87D39300391A82 /* Screens */,
 				45812EC42E853E270078C7AD /* Managers */,
 			);
 			path = Features;
@@ -150,8 +176,9 @@
 		45812EC42E853E270078C7AD /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				454CCECE2E86D5D400D97FE2 /* InternetManager */,
-				458130142E85678B0078C7AD /* SocketManager */,
+				846FD55A2E87E7BA00CA68D6 /* KeyChain */,
+				8482EC552E87D3AB00391A82 /* InternetManager */,
+				8482EC522E87D3AB00391A82 /* SocketManager */,
 				458130102E8567690078C7AD /* DataManager */,
 				458130132E85677D0078C7AD /* WebServiceManager */,
 			);
@@ -201,6 +228,7 @@
 		84209BB52E85B0E800C09683 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				8482EBDF2E87B9C400391A82 /* SCLogModule.swift */,
 				84209BB12E85B0E800C09683 /* AppImages.swift */,
 				84209BB22E85B0E800C09683 /* Colors.swift */,
 				84209BB32E85B0E800C09683 /* AppFonts.swift */,
@@ -208,6 +236,120 @@
 				454CCED02E86D60700D97FE2 /* NotificationExtension.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		846FD55A2E87E7BA00CA68D6 /* KeyChain */ = {
+			isa = PBXGroup;
+			children = (
+				846FD5572E87E7BA00CA68D6 /* KeychainItemAccessibility.swift */,
+				846FD5582E87E7BA00CA68D6 /* KeychainWrapper.swift */,
+				846FD5592E87E7BA00CA68D6 /* KeychainItem.swift */,
+			);
+			path = KeyChain;
+			sourceTree = "<group>";
+		};
+		8482EC292E87D38100391A82 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				8482EC272E87D38100391A82 /* ApiEndPoints.swift */,
+				8482EC282E87D38100391A82 /* NetworkConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		8482EC332E87D39300391A82 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8482EC2C2E87D39300391A82 /* DiagnosisAgentResponse.swift */,
+				8482EC2D2E87D39300391A82 /* GenericResponse.swift */,
+				8482EC2E2E87D39300391A82 /* LoginModel.swift */,
+				8482EC2F2E87D39300391A82 /* ResetPasswordResponse.swift */,
+				8482EC302E87D39300391A82 /* SignupPreferences.swift */,
+				8482EC312E87D39300391A82 /* SignupResponse.swift */,
+				8482EC322E87D39300391A82 /* SocketResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8482EC352E87D39300391A82 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8482EC342E87D39300391A82 /* CustomButtonView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		8482EC372E87D39300391A82 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8482EC352E87D39300391A82 /* Components */,
+				8482EC362E87D39300391A82 /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8482EC392E87D39300391A82 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8482EC382E87D39300391A82 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8482EC3A2E87D39300391A82 /* LoginScreens */ = {
+			isa = PBXGroup;
+			children = (
+				8482EC332E87D39300391A82 /* Model */,
+				8482EC372E87D39300391A82 /* View */,
+				8482EC392E87D39300391A82 /* ViewModel */,
+			);
+			path = LoginScreens;
+			sourceTree = "<group>";
+		};
+		8482EC402E87D39300391A82 /* SocialLoginAuthenticator */ = {
+			isa = PBXGroup;
+			children = (
+				846FD55E2E87E8AA00CA68D6 /* StoreAppleCredential.swift */,
+				8482EC3B2E87D39300391A82 /* AppleAuthenticationProvider.swift */,
+				8482EC3C2E87D39300391A82 /* GoogleAuthenticationProvider.swift */,
+				8482EC3D2E87D39300391A82 /* SocialAuthenticationProvider.swift */,
+				8482EC3E2E87D39300391A82 /* SocialLoginProvider.swift */,
+				8482EC3F2E87D39300391A82 /* SocialSignInUser.swift */,
+			);
+			path = SocialLoginAuthenticator;
+			sourceTree = "<group>";
+		};
+		8482EC412E87D39300391A82 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				8482EC3A2E87D39300391A82 /* LoginScreens */,
+				8482EC402E87D39300391A82 /* SocialLoginAuthenticator */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		8482EC522E87D3AB00391A82 /* SocketManager */ = {
+			isa = PBXGroup;
+			children = (
+				8482EC512E87D3AB00391A82 /* SocketManager.swift */,
+			);
+			path = SocketManager;
+			sourceTree = "<group>";
+		};
+		8482EC552E87D3AB00391A82 /* InternetManager */ = {
+			isa = PBXGroup;
+			children = (
+				8482EC542E87D3AB00391A82 /* InternetManager.swift */,
+			);
+			path = InternetManager;
+			sourceTree = "<group>";
+		};
+		8482EC582E87D3B100391A82 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				8482EC572E87D3B100391A82 /* SplashView.swift */,
+			);
+			path = SplashScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,16 +367,11 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				454CCECE2E86D5D400D97FE2 /* InternetManager */,
-				45812E292E8537580078C7AD /* SplashScreen */,
-				45812EC52E853E450078C7AD /* Screens */,
-				458130092E8560EC0078C7AD /* Constants */,
-				458130142E85678B0078C7AD /* SocketManager */,
-			);
 			name = "Eir-Mind";
 			packageProductDependencies = (
 				45812EDC2E85486C0078C7AD /* SocketIO */,
+				846FD5612E87EB6900CA68D6 /* Alamofire */,
+				846FD5632E87EB6900CA68D6 /* AlamofireDynamic */,
 			);
 			productName = "Eir-Mind";
 			productReference = 45812E062E8535960078C7AD /* Eir-Mind.app */;
@@ -266,6 +403,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				45812EDB2E85486B0078C7AD /* XCRemoteSwiftPackageReference "socket" */,
+				846FD5602E87EB6900CA68D6 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 45812E072E8535960078C7AD /* Products */;
@@ -302,13 +440,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				846FD55F2E87E8AA00CA68D6 /* StoreAppleCredential.swift in Sources */,
+				8482EC562E87D3AB00391A82 /* InternetManager.swift in Sources */,
 				84209BB72E85B0E800C09683 /* AppImages.swift in Sources */,
+				8482EC2A2E87D38100391A82 /* ApiEndPoints.swift in Sources */,
+				8482EC2B2E87D38100391A82 /* NetworkConstants.swift in Sources */,
+				8482EC532E87D3AB00391A82 /* SocketManager.swift in Sources */,
 				84209BB82E85B0E800C09683 /* Colors.swift in Sources */,
 				84209BB92E85B0E800C09683 /* AppFonts.swift in Sources */,
+				8482EBE02E87B9C400391A82 /* SCLogModule.swift in Sources */,
 				454CCED12E86D60700D97FE2 /* NotificationExtension.swift in Sources */,
 				84209BBA2E85B0E800C09683 /* Constants.swift in Sources */,
+				846FD55B2E87E7BA00CA68D6 /* KeychainItem.swift in Sources */,
+				846FD55C2E87E7BA00CA68D6 /* KeychainWrapper.swift in Sources */,
+				846FD55D2E87E7BA00CA68D6 /* KeychainItemAccessibility.swift in Sources */,
 				458130122E8567770078C7AD /* DataManager.swift in Sources */,
 				45812ECD2E853E6D0078C7AD /* WebServiceManager.swift in Sources */,
+				8482EC422E87D39300391A82 /* DiagnosisAgentResponse.swift in Sources */,
+				8482EC432E87D39300391A82 /* GenericResponse.swift in Sources */,
+				8482EC442E87D39300391A82 /* LoginModel.swift in Sources */,
+				8482EC452E87D39300391A82 /* ResetPasswordResponse.swift in Sources */,
+				8482EC462E87D39300391A82 /* SignupPreferences.swift in Sources */,
+				8482EC472E87D39300391A82 /* SignupResponse.swift in Sources */,
+				8482EC482E87D39300391A82 /* SocketResponse.swift in Sources */,
+				8482EC492E87D39300391A82 /* CustomButtonView.swift in Sources */,
+				8482EC4A2E87D39300391A82 /* LoginView.swift in Sources */,
+				8482EC4B2E87D39300391A82 /* LoginViewModel.swift in Sources */,
+				8482EC4C2E87D39300391A82 /* AppleAuthenticationProvider.swift in Sources */,
+				8482EC4D2E87D39300391A82 /* GoogleAuthenticationProvider.swift in Sources */,
+				8482EC4E2E87D39300391A82 /* SocialAuthenticationProvider.swift in Sources */,
+				8482EC4F2E87D39300391A82 /* SocialLoginProvider.swift in Sources */,
+				8482EC592E87D3B100391A82 /* SplashView.swift in Sources */,
+				8482EC502E87D39300391A82 /* SocialSignInUser.swift in Sources */,
 				45812E232E8536890078C7AD /* Eir_MindApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,7 +607,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = F7738QF7WP;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Eir-Mind/Info.plist";
@@ -458,7 +621,6 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.testing.Eir-Mind";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -473,7 +635,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = F7738QF7WP;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Eir-Mind/Info.plist";
@@ -487,7 +649,6 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.testing.Eir-Mind";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -527,6 +688,14 @@
 				kind = branch;
 			};
 		};
+		846FD5602E87EB6900CA68D6 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -534,6 +703,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 45812EDB2E85486B0078C7AD /* XCRemoteSwiftPackageReference "socket" */;
 			productName = SocketIO;
+		};
+		846FD5612E87EB6900CA68D6 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 846FD5602E87EB6900CA68D6 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		846FD5632E87EB6900CA68D6 /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 846FD5602E87EB6900CA68D6 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
