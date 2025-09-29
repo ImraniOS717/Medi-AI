@@ -11,7 +11,7 @@ struct LoginView: View {
     @StateObject var viewModel: LoginViewModel
     var body: some View {
         
-        CustomButtonView(buttonTitle: ViewConstants.address,
+        CustomButtonView(buttonTitle: "Hello World",
                          buttonAction: {},
                          buttonImage: "",
                          buttonFont: .regularFont(size: 12),

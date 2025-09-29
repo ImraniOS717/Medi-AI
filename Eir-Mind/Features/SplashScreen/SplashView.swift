@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SplashView: View {
     var body: some View {
-        Text(ViewConstants.api_key)
+        Text("Hello")
     }
 }
 

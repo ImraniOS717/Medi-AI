@@ -104,7 +104,7 @@ extension AppleAuthenticationProvider: ASAuthorizationControllerDelegate {
             continuation?.resume(returning: userInfo)
             // }
         } else {
-            let error = NSError(domain: "com.example.app", code: 1, userInfo: [NSLocalizedDescriptionKey: "We couldn’t complete your login. Please try again or use a different method.".localize])
+            let error = NSError(domain: "com.example.app", code: 1, userInfo: [NSLocalizedDescriptionKey: "We couldn’t complete your login. Please try again or use a different method."])
             continuation?.resume(throwing: error)
         }
     }
@@ -156,7 +156,7 @@ extension AppleAuthenticationProvider: ASAuthorizationControllerDelegate {
         }
         checkAppleAuthorization()
         printer.print("Error during Apple sign-in: \(errorMessage)", severity: .high)
-        errorMessage = "We couldn’t complete your login. Please try again or use a different method.".localize
+        errorMessage = "We couldn’t complete your login. Please try again or use a different method."
         /// Show the user-friendly error message
         let userFriendlyError = NSError(domain: "com.example.app", code: 1, userInfo: [NSLocalizedDescriptionKey: errorMessage])
 

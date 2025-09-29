@@ -8,6 +8,19 @@
 import Foundation
 import SocketIO
 
+
+enum MessageStatus {
+    case sent
+    case delivered
+    case failed
+}
+
+struct Message {
+    let text: String
+    let userId: String
+    var status: MessageStatus
+}
+
 final class SocketManagerService {
     
     static let shared: SocketManagerService = SocketManagerService()
@@ -15,20 +28,17 @@ final class SocketManagerService {
     private var manager: SocketManager
     private var socket: SocketIOClient
     
-    private let socketURL = URL(string: "http://medai-django.fly.dev")!
+    private let socketURL = URL(string: "http://medai-django.fly.dev/api/docs/ws/diagnose/")!
     
     var socketConnected: (() -> Void)?
-    private let token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODgwZTVmODc3OTUxYmQ5ZTc3ODdkOTMiLCJyb2xlIjoidXNlciIsImVtYWlsIjoiZWlybWluZC50ZXN0QGdtYWlsLmNvbSIsImlzX2FjdGl2ZSI6dHJ1ZSwiZXhwIjoxNzU4OTU1OTQ0fQ.-vGZ8Pny053m08Xzx_cRR-kI8E5hKPs1yJr2RB3Zly0"
-
+    private let userData = UserDefaultDataManager.shared.load(forKey: ViewConstants.saveUserDataKey, type: LoginResponseModel.self)
     
     private init() {
         manager = SocketManager(socketURL: socketURL,
                                 config: [.log(true),
                                 .compress,
-                                .extraHeaders(["Authorization": "Bearer \(token)"])
-])
+                                .extraHeaders(["Authorization": "Bearer \(String(describing: userData?.token))"])])
         socket = manager.defaultSocket
-        socket = manager.socket(forNamespace: "/diagnose")
     }
     
     // MARK: - Connection
@@ -62,19 +72,19 @@ final class SocketManagerService {
     // MARK: - Handlers
     private func addHandlers() {
         socket.on(clientEvent: .connect) { data, ack in
-            print("Socket connected")
+            printer.print("Socket connected")
         }
         
         socket.on(clientEvent: .disconnect) { data, ack in
-            print("Socket disconnected")
+            printer.print("Socket disconnected")
         }
         
         socket.on(clientEvent: .error) { data, ack in
-            print("Socket error: \(data)")
+            printer.print("Socket error: \(data)")
         }
         
         socket.on(clientEvent: .statusChange) { data, ack in
-            print("Socket status changed: \(data)")
+            printer.print("Socket status changed: \(data)")
         }
     }
 }

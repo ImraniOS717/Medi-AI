@@ -14,4 +14,5 @@ struct ApiEndPoints {
     static let diagnosisAgentEndPoint = "diagnosis/agents"
     static let transcriptionSettingsEndPoint = "reset_transcription_settings"
     static let signUpEndPoint = "signup"
+    static let transcribeEndPoint = "docs/ws/transcribe"
 }
